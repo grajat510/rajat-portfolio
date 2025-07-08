@@ -78,7 +78,7 @@ const HeroSection = () => {
           >
             {/* Introduction Video */}
             <div className="card p-6">
-              <h2 className="subtitle text-center mb-6">Meet Grajat - Introduction Video</h2>
+              <h2 className="subtitle text-center mb-6">Meet Rajat Gupta - Introduction Video</h2>
               <div className="aspect-video bg-secondary-100 rounded-lg overflow-hidden shadow-lg">
                 <iframe
                   src="https://www.loom.com/embed/73df9d36d9954d109a7ba5236d34cf70"
