@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { motion } from 'framer-motion'
-import { Code, Database, Globe, Briefcase, Star } from 'lucide-react'
+import { Code, Database, Globe, Briefcase, Star, ExternalLink } from 'lucide-react'
 
 const CodingSkills = () => {
   const programmingLanguages = [
@@ -19,22 +19,52 @@ const CodingSkills = () => {
 
   const projects = [
     {
-      title: 'E-commerce Platform',
-      description: 'Full-stack e-commerce solution with payment integration',
-      technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-      status: 'Completed'
+      title: 'LegalNews SkipEngine Scraper',
+      description: 'Advanced web scraping engine designed to intelligently extract and process legal news content from multiple sources with sophisticated skip patterns and data validation',
+      technologies: ['Python', 'BeautifulSoup', 'Scrapy', 'Selenium'],
+      status: 'Completed',
+      duration: '6 weeks',
+      githubLink: 'https://github.com/grajat510/LegalNews_SkipEngine_Scraper.git'
     },
     {
-      title: 'Task Management App',
-      description: 'Collaborative task management tool with real-time updates',
-      technologies: ['Next.js', 'Firebase', 'TypeScript'],
-      status: 'In Progress'
+      title: 'Grand Rapids Realty Chatbot',
+      description: 'AI-powered conversational agent for real estate inquiries, featuring natural language processing and property recommendation algorithms for enhanced customer experience',
+      technologies: ['Python', 'NLP', 'TensorFlow', 'Flask', 'DialogFlow'],
+      status: 'In Progress',
+      duration: '8 weeks',
+      githubLink: 'https://github.com/grajat510/Grand-Rapids-Realty-Chatbot.git'
     },
     {
-      title: 'Data Analytics Dashboard',
-      description: 'Interactive dashboard for business data visualization',
-      technologies: ['Python', 'Django', 'PostgreSQL', 'Chart.js'],
-      status: 'Completed'
+      title: 'AI Video & Audio Processing Suite',
+      description: 'Cutting-edge multimedia processing platform leveraging deep learning for automated video analysis, speech recognition, and audio enhancement with real-time capabilities',
+      technologies: ['Python', 'OpenCV', 'FFmpeg', 'PyTorch', 'MoviePy'],
+      status: 'In Progress',
+      duration: '10 weeks',
+      githubLink: 'https://github.com/grajat510/ai_video_audio.git'
+    },
+    {
+      title: 'Interactive Data Visualization Dashboard',
+      description: 'Fully responsive analytics dashboard providing comprehensive insights from massive datasets with dynamic charts, real-time filtering, and interactive data exploration',
+      technologies: ['React', 'Flask', 'MongoDB', 'D3.js', 'Chart.js'],
+      status: 'Completed',
+      duration: '5 weeks',
+      githubLink: 'https://github.com/grajat510/Interactive_Visualisation_Dashboard.git'
+    },
+    {
+      title: 'FastAPI Enterprise Backend',
+      description: 'High-performance RESTful API service with advanced query optimization, secure authentication, and scalable microservices architecture for enterprise applications',
+      technologies: ['FastAPI', 'PostgreSQL', 'JWT', 'Docker', 'Redis'],
+      status: 'Completed',
+      duration: '4 weeks',
+      githubLink: 'https://github.com/grajat510/FastAPI_Project.git'
+    },
+    {
+      title: 'Gericht Restaurant Experience',
+      description: 'Elegant and sophisticated restaurant website featuring immersive UI/UX design, responsive layouts, and modern web technologies for premium dining establishments',
+      technologies: ['React', 'TypeScript', 'SCSS', 'Framer Motion'],
+      status: 'Completed',
+      duration: '3 weeks',
+      githubLink: 'https://github.com/grajat510/gericht-restaurant.git'
     }
   ]
 
@@ -151,7 +181,7 @@ const CodingSkills = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {projects.map((project, index) => (
                 <div key={index} className="card p-6 hover:scale-105 transition-transform duration-200">
-                  <div className="flex items-center justify-between mb-4">
+                  <div className="flex items-center justify-between mb-3">
                     <h4 className="text-lg font-semibold text-secondary-800">{project.title}</h4>
                     <span className={`px-2 py-1 rounded-full text-xs font-medium ${
                       project.status === 'Completed' ? 'bg-green-100 text-green-800' : 'bg-yellow-100 text-yellow-800'
@@ -159,14 +189,26 @@ const CodingSkills = () => {
                       {project.status}
                     </span>
                   </div>
+                  <div className="text-sm text-primary-600 font-medium mb-3">
+                    ⏱️ Development Time: {project.duration}
+                  </div>
                   <p className="text-secondary-600 mb-4">{project.description}</p>
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-2 mb-4">
                     {project.technologies.map((tech, techIndex) => (
                       <span key={techIndex} className="px-2 py-1 bg-secondary-100 text-secondary-700 rounded text-sm">
                         {tech}
                       </span>
                     ))}
                   </div>
+                  <a
+                    href={project.githubLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-4 py-2 bg-secondary-800 text-white rounded-lg hover:bg-secondary-700 transition-colors duration-200 text-sm font-medium"
+                  >
+                    <ExternalLink className="h-4 w-4" />
+                    View on GitHub
+                  </a>
                 </div>
               ))}
             </div>
