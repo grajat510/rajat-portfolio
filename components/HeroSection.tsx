@@ -14,8 +14,8 @@ const HeroSection = () => {
 
   const achievements = [
     'Freelance Software Developer since Jan 2024',
-    '6 Years of Mechanical Engineering Experience',
     'Proficient in Multiple Programming Languages',
+    '6 Years of Mechanical Engineering Experience',    
     'Expert in CAD and Manufacturing Software',
     'Multilingual: English, Punjabi, Learning Kannada & Japanese'
   ]

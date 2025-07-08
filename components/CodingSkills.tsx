@@ -6,16 +6,15 @@ import { Code, Database, Globe, Briefcase, Star } from 'lucide-react'
 
 const CodingSkills = () => {
   const programmingLanguages = [
-    'JavaScript', 'TypeScript', 'Python', 'Java', 'C++', 'C#', 'HTML5', 'CSS3', 'SQL'
+    'JavaScript', 'TypeScript', 'Python', 'HTML5', 'CSS3'
   ]
 
   const frameworks = [
-    'React.js', 'Next.js', 'Node.js', 'Express.js', 'Django', 'Flask', 'Spring Boot', 
-    'Angular', 'Vue.js', 'Tailwind CSS', 'Bootstrap', 'Material-UI'
+    'React.js', 'Next.js', 'Nuxt.js', 'Node.js', 'Express.js', 'Django', 'Flask', 'Vue.js', 'Tailwind CSS', 'Bootstrap', 'Wordpress', 'RestAPI', 'FastAPI', 'Postman', 'Git', 'Selenium' 
   ]
 
   const databases = [
-    'MongoDB', 'PostgreSQL', 'MySQL', 'SQLite', 'Redis', 'Firebase', 'Supabase'
+    'MongoDB', 'PostgreSQL', 'MySQL', 'SQLite'
   ]
 
   const projects = [
