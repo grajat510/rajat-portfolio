@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { motion } from 'framer-motion'
-import { Code, Database, Globe, Briefcase, Star, ExternalLink } from 'lucide-react'
+import { Code, Database, Globe, Briefcase, Star, ExternalLink, Video, Monitor, Users, Building2, Calendar, CheckCircle2 } from 'lucide-react'
 
 const CodingSkills = () => {
   const programmingLanguages = [
@@ -72,24 +72,59 @@ const CodingSkills = () => {
     {
       company: 'Proqly',
       period: 'Jan 2024 - Present',
-      role: 'Frontend Developer',
-      responsibilities: [
-        'Developed responsive web applications using React and Next.js',
-        'Implemented modern UI/UX designs with Tailwind CSS',
-        'Collaborated with backend teams for API integration',
-        'Optimized application performance and SEO'
-      ]
+      role: 'Full Stack Developer',
+      project: 'MyContactBoss CRM Platform',
+      description: 'Developed a comprehensive Customer Relationship Management system featuring advanced contact management, lead tracking, and automated workflow capabilities for enhanced business productivity.',
+      technologies: ['Vue.js', 'Django', 'PostgreSQL', 'Python', 'CSS3', 'JavaScript', 'Postman', 'Git'],
+      githubLink: 'https://github.com/proqly/mycontactboss.git',
+      websiteLinks: [
+        {
+          name: 'Production Site',
+          url: 'https://crm.mikerossgrr.com/core/login/',
+          description: 'Live CRM Platform (Credentials Protected)'
+        },
+        {
+          name: 'Staging Environment',
+          url: 'https://mycontactboss-paramvirg.pythonanywhere.com/core/login/',
+          description: 'Test Environment (ID: mikeross, Password: mikeross)'
+        },
+        {
+          name: 'Company Website',
+          url: 'https://mikerossgrr.com/',
+          description: 'Official Proqly Website'
+        }
+      ],
+      achievements: [
+        'Developed secure authentication and authorization system',
+        'Built automated lead management and contact tracking features',
+        'Optimized database queries resulting in 40% faster load times',
+        'Created RESTful APIs for seamless data integration'
+      ],
+      status: 'In Progress'
     },
     {
       company: 'Ivanooo',
-      period: 'Jan 2024 - Present',
-      role: 'Full Stack Developer',
-      responsibilities: [
-        'Built complete web applications from scratch',
-        'Managed database design and implementation',
-        'Handled client requirements and project delivery',
-        'Maintained code quality and documentation'
-      ]
+      period: 'Jan 2025 - Present',
+      role: 'Frontend Developer',
+      project: 'Ivanooo E-commerce Platform',
+      description: 'Architected and developed a modern, responsive e-commerce platform using Nuxt.js with advanced features including product catalog, shopping cart, and seamless checkout experience.',
+      technologies: ['Nuxt.js', 'Wordpress PHP', 'TypeScript', 'Tailwind CSS', 'JavaScript', 'Node.js', 'Git'],
+      githubLink: 'https://github.com/Ivanooo-com/ivanooo-nuxt.git',
+      websiteLinks: [
+        {
+          name: 'Live Platform',
+          url: 'https://ivanooo.com',
+          description: 'Fully Functional E-commerce Platform'
+        }
+      ],
+      achievements: [
+        'Built dynamic product catalog with advanced filtering and search',
+        'Implemented responsive design ensuring mobile-first approach',
+        'Developed shopping cart functionality with persistent state management',
+        'Created seamless checkout process with multiple payment integrations',
+        'Optimized site performance achieving 95+ Lighthouse scores'
+      ],
+      status: 'Completed'
     }
   ]
 
@@ -223,25 +258,136 @@ const CodingSkills = () => {
           >
             <h3 className="text-2xl font-bold text-secondary-800 mb-8 text-center flex items-center justify-center gap-2">
               <Briefcase className="h-6 w-6 text-primary-600" />
-              Freelance Experience
+              Professional Freelance Experience
             </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            
+            {/* Project Demo Video */}
+            <div className="bg-gradient-to-r from-primary-50 to-secondary-50 rounded-xl p-6 mb-8 text-center">
+              <div className="flex items-center justify-center gap-2 mb-4">
+                <Video className="h-6 w-6 text-primary-600" />
+                <h4 className="text-xl font-semibold text-secondary-800">Project Demonstration</h4>
+              </div>
+              <p className="text-secondary-700 mb-4">
+                Watch my comprehensive walkthrough of the Proqly and Ivanooo projects, showcasing key features and development insights.
+              </p>
+              <a
+                href="https://www.loom.com/share/5b99fbcbb8274479a0d2e6ebddae1ec0?sid=8133ee78-62c3-4529-91b9-b7505face13d"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors duration-200 font-medium"
+              >
+                <Video className="h-5 w-5" />
+                Watch Project Demo
+              </a>
+            </div>
+
+            <div className="space-y-8">
               {freelanceExperience.map((exp, index) => (
-                <div key={index} className="card p-6">
-                  <div className="flex items-center justify-between mb-4">
-                    <h4 className="text-lg font-semibold text-secondary-800">{exp.company}</h4>
-                    <span className="text-sm text-secondary-600">{exp.period}</span>
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, x: index % 2 === 0 ? -20 : 20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                  className="card p-8 hover:shadow-xl transition-shadow duration-300"
+                >
+                  {/* Header Section */}
+                  <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-6">
+                    <div className="flex items-center gap-3 mb-4 lg:mb-0">
+                      <Building2 className="h-8 w-8 text-primary-600" />
+                      <div>
+                        <h4 className="text-2xl font-bold text-secondary-800">{exp.company}</h4>
+                        <p className="text-lg text-primary-600 font-medium">{exp.role}</p>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-4">
+                      <div className="flex items-center gap-1 text-secondary-600">
+                        <Calendar className="h-4 w-4" />
+                        <span className="text-sm font-medium">{exp.period}</span>
+                      </div>
+                      <span className={`px-3 py-1 rounded-full text-sm font-medium ${
+                        exp.status === 'Completed' 
+                          ? 'bg-green-100 text-green-800' 
+                          : 'bg-blue-100 text-blue-800'
+                      }`}>
+                        {exp.status}
+                      </span>
+                    </div>
                   </div>
-                  <p className="text-primary-600 font-medium mb-4">{exp.role}</p>
-                  <ul className="space-y-2">
-                    {exp.responsibilities.map((responsibility, respIndex) => (
-                      <li key={respIndex} className="flex items-start gap-2 text-secondary-700">
-                        <Star className="h-4 w-4 text-primary-600 mt-0.5 flex-shrink-0" />
-                        {responsibility}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+
+                  {/* Project Details */}
+                  <div className="mb-6">
+                    <h5 className="text-xl font-semibold text-secondary-800 mb-3 flex items-center gap-2">
+                      <Monitor className="h-5 w-5 text-primary-600" />
+                      {exp.project}
+                    </h5>
+                    <p className="text-secondary-700 leading-relaxed">{exp.description}</p>
+                  </div>
+
+                  {/* Technologies */}
+                  <div className="mb-6">
+                    <h6 className="text-lg font-semibold text-secondary-800 mb-3">Technologies Used</h6>
+                    <div className="flex flex-wrap gap-2">
+                      {exp.technologies.map((tech, techIndex) => (
+                        <span
+                          key={techIndex}
+                          className="px-3 py-1 bg-primary-100 text-primary-800 rounded-lg text-sm font-medium"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Key Achievements */}
+                  <div className="mb-6">
+                    <h6 className="text-lg font-semibold text-secondary-800 mb-3 flex items-center gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-green-600" />
+                      Key Achievements
+                    </h6>
+                    <ul className="space-y-2">
+                      {exp.achievements.map((achievement, achIndex) => (
+                        <li key={achIndex} className="flex items-start gap-2 text-secondary-700">
+                          <Star className="h-4 w-4 text-primary-600 mt-1 flex-shrink-0" />
+                          <span className="leading-relaxed">{achievement}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  {/* Links Section */}
+                  <div className="border-t border-secondary-200 pt-6">
+                    <div className="flex flex-col lg:flex-row gap-4">
+                      {/* GitHub Link */}
+                      <a
+                        href={exp.githubLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-4 py-2 bg-secondary-800 text-white rounded-lg hover:bg-secondary-700 transition-colors duration-200 font-medium"
+                      >
+                        <ExternalLink className="h-4 w-4" />
+                        View Source Code
+                      </a>
+
+                      {/* Website Links */}
+                      <div className="flex flex-wrap gap-2">
+                        {exp.websiteLinks.map((link, linkIndex) => (
+                          <a
+                            key={linkIndex}
+                            href={link.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-2 px-4 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors duration-200 font-medium text-sm"
+                            title={link.description}
+                          >
+                            <Monitor className="h-4 w-4" />
+                            {link.name}
+                          </a>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </motion.div>
               ))}
             </div>
           </motion.div>

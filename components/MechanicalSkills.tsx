@@ -9,18 +9,21 @@ const MechanicalSkills = () => {
     { name: 'AutoCAD', level: 'Expert', years: '6+' },
     { name: 'SolidWorks', level: 'Advanced', years: '5+' },
     { name: 'CNC Programming', level: 'Advanced', years: '4+' },
-    { name: 'CATIA', level: 'Intermediate', years: '3+' },
-    { name: 'Fusion 360', level: 'Intermediate', years: '2+' },
-    { name: 'Inventor', level: 'Intermediate', years: '3+' }
+    { name: 'MS-Excel with AI Integration', level: 'Intermediate', years: '6+' },
+    { name: 'MS-Office', level: 'Intermediate', years: '6+' },
+    { name: 'MS-Powerpoint', level: 'Intermediate', years: '3+' },
+    { name: 'MS-Outlook', level: 'Intermediate', years: '3+' },
+    { name: 'MS-Teams', level: 'Intermediate', years: '3+' },
+    { name: 'MS-OneDrive', level: 'Intermediate', years: '3+' },
   ]
 
   const experiences = [
     {
       company: 'DNHA (Japanese Company)',
-      period: '2018-2021',
+      period: '2017-2020',
       duration: '3 Years',
-      role: 'Senior Mechanical Engineer',
-      location: 'Add Location',
+      role: 'Process Mechanical Engineer',
+      location: 'Manesar, Haryana, India',
       responsibilities: [
         'Designed and developed mechanical components using CAD software',
         'Collaborated with Japanese team on precision manufacturing projects',
@@ -36,10 +39,10 @@ const MechanicalSkills = () => {
     },
     {
       company: 'Golden Agro',
-      period: '2021-2024',
+      period: '2020-2023',
       duration: '3 Years',
       role: 'Mechanical Engineer',
-      location: 'Add Location',
+      location: 'Khanna, Punjab, India',
       responsibilities: [
         'Designed agricultural machinery and equipment',
         'Performed stress analysis and component testing',
@@ -58,12 +61,11 @@ const MechanicalSkills = () => {
   const skills = [
     'Mechanical Design', 'Product Development', 'Manufacturing Processes',
     'Quality Control', 'Project Management', 'Technical Documentation',
-    'Stress Analysis', 'Assembly Design', 'Cost Optimization',
+    'Assembly Design', 'Cost Optimization',
     'Client Relations', 'Team Leadership', 'Process Improvement'
   ]
 
   const certifications = [
-    'Add your relevant certifications here',
     'Professional Engineer (PE) License',
     'SolidWorks Certification',
     'AutoCAD Professional Certification'
