@@ -76,22 +76,21 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="space-y-8"
           >
-            {/* Video Placeholder */}
+            {/* Introduction Video */}
             <div className="card p-6">
-              <h2 className="subtitle text-center mb-6">Introduction Video</h2>
-              <div className="aspect-video bg-secondary-100 rounded-lg flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M8 5v14l11-7z"/>
-                    </svg>
-                  </div>
-                  <p className="text-secondary-600">Your introduction video will be embedded here</p>
-                  <p className="text-sm text-secondary-500 mt-2">
-                    Record a 2-3 minute video introducing yourself and your goals
-                  </p>
-                </div>
+              <h2 className="subtitle text-center mb-6">Meet Grajat - Introduction Video</h2>
+              <div className="aspect-video bg-secondary-100 rounded-lg overflow-hidden shadow-lg">
+                <iframe
+                  src="https://www.loom.com/embed/73df9d36d9954d109a7ba5236d34cf70"
+                  frameBorder="0"
+                  allowFullScreen
+                  className="w-full h-full"
+                  title="Grajat's Introduction Video"
+                ></iframe>
               </div>
+              <p className="text-center text-secondary-600 mt-4 text-sm">
+                🎥 Watch my personal introduction and learn about my journey as a Full Stack Developer
+              </p>
             </div>
 
             {/* Achievements */}
