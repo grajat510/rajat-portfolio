@@ -71,7 +71,7 @@ const CodingSkills = () => {
   const freelanceExperience = [
     {
       company: 'Proqly',
-      period: 'Jan 2024 - Present',
+      period: 'Jan 2024 - Jun 2025',
       role: 'Full Stack Developer',
       project: 'MyContactBoss CRM Platform',
       description: 'Developed a comprehensive Customer Relationship Management system featuring advanced contact management, lead tracking, and automated workflow capabilities for enhanced business productivity.',
@@ -100,7 +100,7 @@ const CodingSkills = () => {
         'Optimized database queries resulting in 40% faster load times',
         'Created RESTful APIs for seamless data integration'
       ],
-      status: 'In Progress'
+      status: 'Completed'
     },
     {
       company: 'Ivanooo',
@@ -124,7 +124,7 @@ const CodingSkills = () => {
         'Created seamless checkout process with multiple payment integrations',
         'Optimized site performance achieving 95+ Lighthouse scores'
       ],
-      status: 'Completed'
+      status: 'In Progress'
     }
   ]
 
