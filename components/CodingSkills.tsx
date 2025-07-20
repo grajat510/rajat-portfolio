@@ -78,11 +78,11 @@ const CodingSkills = () => {
       technologies: ['Vue.js', 'Django', 'PostgreSQL', 'Python', 'CSS3', 'JavaScript', 'Postman', 'Git'],
       githubLink: 'https://github.com/proqly/mycontactboss.git',
       websiteLinks: [
-        {
-          name: 'Production Site',
-          url: 'https://crm.mikerossgrr.com/core/login/',
-          description: 'Live CRM Platform (Credentials Protected)'
-        },
+        // {
+        //   name: 'Production Site',
+        //   url: 'https://crm.mikerossgrr.com/core/login/',
+        //   description: 'Live CRM Platform (Credentials Protected)'
+        // },
         {
           name: 'Staging Environment',
           url: 'https://mycontactboss-paramvirg.pythonanywhere.com/core/login/',
