@@ -76,7 +76,7 @@ const CodingSkills = () => {
       project: 'MyContactBoss CRM Platform',
       description: 'Developed a comprehensive Customer Relationship Management system featuring advanced contact management, lead tracking, and automated workflow capabilities for enhanced business productivity.',
       technologies: ['Vue.js', 'Django', 'PostgreSQL', 'Python', 'CSS3', 'JavaScript', 'Postman', 'Git'],
-      githubLink: 'https://github.com/proqly/mycontactboss.git',
+      // githubLink: 'https://github.com/proqly/mycontactboss.git',
       websiteLinks: [
         // {
         //   name: 'Production Site',
@@ -84,9 +84,9 @@ const CodingSkills = () => {
         //   description: 'Live CRM Platform (Credentials Protected)'
         // },
         {
-          name: 'Staging Environment',
-          url: 'https://mycontactboss-paramvirg.pythonanywhere.com/core/login/',
-          description: 'Test Environment (ID: mikeross, Password: mikeross)'
+          name: 'Watch Project Demo',
+          url: 'https://www.loom.com/share/5b99fbcbb8274479a0d2e6ebddae1ec0?sid=8133ee78-62c3-4529-91b9-b7505face13d',
+          description: 'Watch the project demonstration video'
         },
         {
           name: 'Company Website',
@@ -109,7 +109,7 @@ const CodingSkills = () => {
       project: 'Ivanooo E-commerce Platform',
       description: 'Architected and developed a modern, responsive e-commerce platform using Nuxt.js with advanced features including product catalog, shopping cart, and seamless checkout experience.',
       technologies: ['Nuxt.js', 'Wordpress PHP', 'TypeScript', 'Tailwind CSS', 'JavaScript', 'Node.js', 'Git'],
-      githubLink: 'https://github.com/Ivanooo-com/ivanooo-nuxt.git',
+      // githubLink: 'https://github.com/Ivanooo-com/ivanooo-nuxt.git',
       websiteLinks: [
         {
           name: 'Live Platform',
@@ -358,16 +358,16 @@ const CodingSkills = () => {
                   {/* Links Section */}
                   <div className="border-t border-secondary-200 pt-6">
                     <div className="flex flex-col lg:flex-row gap-4">
-                      {/* GitHub Link */}
+                      {/* GitHub Link
                       <a
-                        href={exp.githubLink}
+                        // href={exp.githubLink}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 px-4 py-2 bg-secondary-800 text-white rounded-lg hover:bg-secondary-700 transition-colors duration-200 font-medium"
                       >
                         <ExternalLink className="h-4 w-4" />
                         View Source Code
-                      </a>
+                      </a> */}
 
                       {/* Website Links */}
                       <div className="flex flex-wrap gap-2">
